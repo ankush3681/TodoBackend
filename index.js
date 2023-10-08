@@ -15,10 +15,10 @@ app.use("/todo", TodoRoute);
 app.listen(process.env.port, async () => {
   try {
     await connection;
-    console.log("server is connected to DB");
-    console.log(`server is running on port ${process.env.port}`);
+    console.log("server is connected to Data Base");
+    console.log(`server is running on the port ${process.env.port}`);
   } catch (err) {
-    console.log("cannot connect to DB");
+    console.log("cannot connect to Data Base");
     console.log(err.message);
   }
 });
