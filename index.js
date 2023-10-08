@@ -9,6 +9,10 @@ const app = express();
 app.use(express.json());
 app.use("/user", UserRoute);
 
+app.get("/",(req,res)=>{
+  res.send({"msg":"This is the deployed Url of Todo"})
+})
+
 app.use(auth);
 app.use("/todo", TodoRoute);
 
